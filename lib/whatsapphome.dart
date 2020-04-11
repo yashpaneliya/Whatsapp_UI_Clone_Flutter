@@ -52,11 +52,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with SingleTickerProviderSt
           CallPage()
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).accentColor,
-        child: Icon(Icons.message,color: Colors.white,),
-        onPressed: (){},
-      ),
+      
     );
   }
 }
