@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/pages/callpage.dart';
+import 'package:whatsapp_ui_clone/pages/camerapage.dart';
+import 'pages/chatpage.dart';
+import 'pages/statuspage.dart';
 
 class WhatsAppHome extends StatefulWidget {
   @override
@@ -33,6 +37,11 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with SingleTickerProviderSt
             Tab(child: Text('Calls')),
           ],
         ),
+        actions: <Widget>[
+          Icon(Icons.search),
+          Padding(padding: EdgeInsets.symmetric(horizontal: 5.0),),
+          Icon(Icons.more_vert)
+        ],
       ),
       body: TabBarView(
         controller: tbc,
@@ -45,7 +54,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with SingleTickerProviderSt
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Theme.of(context).accentColor,
-        child: Icon(Icons.message),
+        child: Icon(Icons.message,color: Colors.white,),
         onPressed: (){},
       ),
     );
